@@ -31,7 +31,7 @@ def main():
 			# potential keyspace of like nearly 12 million passwords
 			# TODO: Any special chars in the key cause me issues, so strip
 			# them out. When I implement number handling, I'll put it back in
-			fixed_key = re.sub('[ !@#$%^&*123456789]', '', sys.argv[1])[:5]
+			fixed_key = re.sub('[ !@#$%^&*123456789]', '', sys.argv[2])[:5]
 
 	
 			if(sys.argv[1] == 'e'):
@@ -63,7 +63,7 @@ def encrypt(key, message):
 		
 		#Check if it's a supported character, otherwise jump it		
 		if num != -1:
-			num += ALPHABET.find(key[index])
+			num += ALPHABET.find(key[index].upper())
 			num %= len(ALPHABET)
 
 			if char.isupper():
@@ -97,7 +97,7 @@ def decrypt(key, message):
 		
 		#Check if it's a supported character, otherwise jump it		
 		if num != -1:
-			num -= ALPHABET.find(key[index])
+			num -= ALPHABET.find(key[index].upper())
 			num %= len(ALPHABET)
 
 			if char.isupper():
