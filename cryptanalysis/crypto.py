@@ -15,7 +15,8 @@ ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 # Hardcode the password into the file, it might make it easier
 # than having to remember to add a key at runtime. It's not in the
 # top 24 passwords of the year, so that should be ok
-# PASSWORD = 
+# PASSWORD = Removed the password from here, it's not great to have
+# it hardcoded, no matter how easy it makes it
 
 def main():
 	if(len(sys.argv) == 4):
