@@ -1,6 +1,9 @@
-#Vigenere Cipher Challenge Code
-#This script is used to create ciphertext from plaintext in a file
-#and to decrypt ciphertext to plaintext using a user supplied key
+# Vigenere Cipher Challenge Code
+#
+# This script is used to create ciphertext from plaintext in a file
+# and to decrypt ciphertext to plaintext using a user supplied key
+# 
+# Source code is available at https://github.com/otoolebrian/Challenges/
 
 import sys
 import re
