@@ -1,0 +1,10 @@
+#Create the database for the TopPerformers
+DROP DATABASE TOPPERFORMERS;
+DROP USER 'maryonthedb'@'localhost';
+DROP USER 'superadmin'@'localhost';
+CREATE DATABASE TOPPERFORMERS;
+CREATE USER 'maryonthedb'@'localhost' IDENTIFIED BY '2345snjkdf89wsa';
+CREATE USER 'superadmin'@'localhost' IDENTIFIED BY 'sdgf78346tqbliugdasf';
+GRANT INSERT, SELECT ON TOPPERFORMERS.* TO 'maryonthedb'@'localhost';
+GRANT ALL PRIVILEGES ON TOPPERFORMERS.* TO 'superadmin'@'localhost';
+FLUSH PRIVILEGES;

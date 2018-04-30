@@ -1,0 +1,4 @@
+#Script to setup the tables on TOPPERFORMERS
+USE TOPPERFORMERS;
+CREATE TABLE IF NOT EXISTS topperformers (name VARCHAR (20), team VARCHAR(20));
+INSERT INTO topperformers (name, team) VALUES ('Little Bobby Tables', 'www.xkcd.com/327');
